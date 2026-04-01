@@ -1,0 +1,65 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+header {
+    background: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* Home */
+.home {
+    text-align: center;
+    padding: 50px;
+    background: lightgray;
+}
+
+/* Cars */
+#cars {
+    padding: 20px;
+    text-align: center;
+}
+
+.car-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.car {
+    border: 1px solid gray;
+    padding: 15px;
+    width: 200px;
+}
+
+/* Booking */
+#booking {
+    text-align: center;
+    padding: 20px;
+}
+
+input, select, button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+/* Contact */
+#contact {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
