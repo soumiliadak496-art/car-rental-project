@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Rental Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>Car Rental</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#cars">Cars</a>
+            <a href="#booking">Booking</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+        <h2>Find Your Perfect Car</h2>
+        <p>Best cars at affordable prices</p>
+        <button onclick="showMessage()">Explore Cars</button>
+    </section>
+
+    <!-- Car Listing -->
+    <section id="cars">
+        <h2>Available Cars</h2>
+        <div class="car-container">
+            <div class="car">
+                <h3>Swift</h3>
+                <p>Price: ₹1500/day</p>
+                <button onclick="bookCar('Swift')">Book Now</button>
+            </div>
+
+            <div class="car">
+                <h3>Creta</h3>
+                <p>Price: ₹2500/day</p>
+                <button onclick="bookCar('Creta')">Book Now</button>
+            </div>
+
+            <div class="car">
+                <h3>Fortuner</h3>
+                <p>Price: ₹4000/day</p>
+                <button onclick="bookCar('Fortuner')">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking">
+        <h2>Book a Car</h2>
+        <form onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Enter your name">
+            <input type="date" id="date">
+            <select id="car">
+                <option value="">Select Car</option>
+                <option>Swift</option>
+                <option>Creta</option>
+                <option>Fortuner</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: carrental@email.com</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
